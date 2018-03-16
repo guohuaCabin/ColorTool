@@ -74,6 +74,35 @@ class SetingViewController: UIViewController,UITableViewDelegate,UITableViewData
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+        
+        let  row = indexPath.row
+        
+        switch row {
+        case 0:
+            let aboutVC = AboutViewController()
+            self.navigationController?.pushViewController(aboutVC, animated: true)
+            break
+        case 1:
+            let versionInfoVC = VersionInfoViewController()
+            self.navigationController?.pushViewController(versionInfoVC, animated: true)
+            break
+        case 2:
+//            let versionInfoVC = VersionInfoViewController()
+//            self.navigationController?.pushViewController(versionInfoVC, animated: true)
+            break
+        case 3:
+//            let versionInfoVC = VersionInfoViewController()
+//            self.navigationController?.pushViewController(versionInfoVC, animated: true)
+            break
+
+        default:
+            break
+        }
+        
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

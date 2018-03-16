@@ -31,10 +31,10 @@ class ShowViewController: UIViewController,UICollectionViewDelegate,UICollection
         if !(colorValue.isEmpty){
             let datas = colorValue.components(separatedBy: ";")
             for colorStr in datas {
-                let data :Array = colorStr.components(separatedBy: "/")
-                if colorStr.isEmpty{
+                if colorStr.isEmpty || !colorStr.contains("/"){
                     return
                 }
+                let data :Array = colorStr.components(separatedBy: "/")
                 let  hexStr :String = data[data.count-2]
                 let color = HexToRGBColor(hexStr)
                 self.colorsArray?.add(color)
@@ -84,6 +84,8 @@ class ShowViewController: UIViewController,UICollectionViewDelegate,UICollection
         //设置 UICollectionView 的单元格点击(默认是 true)
         self.collectionView.allowsSelection = true
         
+        self.collectionView.showsVerticalScrollIndicator = false
+        self.collectionView.showsHorizontalScrollIndicator  = false
         //分页
 //        self.collectionView.isPagingEnabled = true
         let nib = UINib.init(nibName: "ShowCell", bundle: nil)

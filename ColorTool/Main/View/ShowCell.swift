@@ -16,7 +16,8 @@ class ShowCell: UICollectionViewCell {
     
     
     func configCell(_ dict:Dictionary<String, Any> ,color:UIColor)  {
-
+        self.titleLab.adjustsFontSizeToFitWidth = true
+        self.contentLab.adjustsFontSizeToFitWidth = true
         self.bgView.backgroundColor = color
         
         //   content:     LightPink/浅粉红/#FFB6C1/255,182,193

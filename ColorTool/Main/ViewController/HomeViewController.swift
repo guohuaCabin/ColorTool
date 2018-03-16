@@ -254,7 +254,7 @@ class HomeViewController: UIViewController,UIScrollViewDelegate,UITextFieldDeleg
             self.rgbShowHexLab?.textColor = UIColor.black
         }
         
-        self.rgbShowLab?.text = " Red: \(redNumber)   Green: \(greenNumber)   Blue: \(blueNumber)"
+        self.rgbShowLab?.text = " Red: \(NSInteger(redNumber))   Green: \(NSInteger(greenNumber))   Blue: \(NSInteger(blueNumber))"
         
         self.rgbShowHexLab?.text = String(format: " 16进制数值: \(self.hexFromUIColor(rgbColor))")
         
@@ -310,15 +310,6 @@ class HomeViewController: UIViewController,UIScrollViewDelegate,UITextFieldDeleg
         self.hexShowView?.backgroundColor = hexColor
         
     }
-    
-//    //判断颜色是否是暗色
-//    func isDarkColor(_ red:CGFloat, green:CGFloat, blue:CGFloat) -> Bool {
-//        if(red*0.299 + red*0.578 + red*0.114 >= 192){ //浅色
-//            return false
-//        } else {  //深色
-//            return true
-//        }
-//    }
     
     //根据颜色得到16进制数
     func hexFromUIColor(_ color:UIColor) -> String {

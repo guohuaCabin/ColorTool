@@ -19,7 +19,7 @@ class MainViewController: UITabBarController {
     var currentIndex :NSInteger!
     
     
-    let titles = ["转换","展示","设置"]
+    let titles = ["转换","展示","随机","设置"]
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -86,11 +86,14 @@ class MainViewController: UITabBarController {
     func initViewController() {
         let homeVC = HomeViewController()
         let showVC = ShowViewController()
+        let randomVC = RandomViewController()
         let setingVC = SetingViewController()
         
-        self.viewControllers = [homeVC,showVC,setingVC]
+        self.viewControllers = [homeVC,showVC,randomVC,setingVC]
         
-        
+        //修改“返回按钮”的文字
+        let item = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
+        self.navigationItem.backBarButtonItem = item
     }
     
     //MARK: tabbar click
