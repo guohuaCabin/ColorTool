@@ -39,6 +39,10 @@
 		1A75A2F6205BC3B100D469D9 /* ES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A75A2EC205BC3B100D469D9 /* ES.swift */; };
 		1A75A2F7205BC3B100D469D9 /* ESPullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A75A2ED205BC3B100D469D9 /* ESPullToRefresh.swift */; };
 		1A75A2F9205BC62D00D469D9 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A75A2F8205BC62D00D469D9 /* Task.swift */; };
+		1A75A2FC205BDFE300D469D9 /* ExchangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A75A2FA205BDFE300D469D9 /* ExchangeViewController.swift */; };
+		1A75A2FD205BDFE300D469D9 /* ExchangeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A75A2FB205BDFE300D469D9 /* ExchangeViewController.xib */; };
+		1A75A2FF205BE00400D469D9 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A75A2FE205BE00400D469D9 /* DiscoverViewController.swift */; };
+		1A75A301205BE54100D469D9 /* WebViewProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A75A300205BE54100D469D9 /* WebViewProgress.swift */; };
 		1AEBACF1205A6BAF00974188 /* SetingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEBACEF205A6BAF00974188 /* SetingCell.swift */; };
 		1AEBACF7205A6C3900974188 /* ShowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AEBACF5205A6C3900974188 /* ShowCell.xib */; };
 		1AEBACF9205A6D7C00974188 /* ShowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEBACF8205A6D7C00974188 /* ShowCell.swift */; };
@@ -102,6 +106,10 @@
 		1A75A2EC205BC3B100D469D9 /* ES.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ES.swift; sourceTree = "<group>"; };
 		1A75A2ED205BC3B100D469D9 /* ESPullToRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESPullToRefresh.swift; sourceTree = "<group>"; };
 		1A75A2F8205BC62D00D469D9 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		1A75A2FA205BDFE300D469D9 /* ExchangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeViewController.swift; sourceTree = "<group>"; };
+		1A75A2FB205BDFE300D469D9 /* ExchangeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangeViewController.xib; sourceTree = "<group>"; };
+		1A75A2FE205BE00400D469D9 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		1A75A300205BE54100D469D9 /* WebViewProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewProgress.swift; sourceTree = "<group>"; };
 		1AEBACEF205A6BAF00974188 /* SetingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetingCell.swift; sourceTree = "<group>"; };
 		1AEBACF5205A6C3900974188 /* ShowCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowCell.xib; sourceTree = "<group>"; };
 		1AEBACF8205A6D7C00974188 /* ShowCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowCell.swift; sourceTree = "<group>"; };
@@ -160,6 +168,7 @@
 				1A75A2DB205BB72800D469D9 /* RandomCell.swift */,
 				1A75A2DC205BB72800D469D9 /* RandomCell.xib */,
 				1A75A2F8205BC62D00D469D9 /* Task.swift */,
+				1A75A300205BE54100D469D9 /* WebViewProgress.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -175,6 +184,9 @@
 				1A75A2CB205B65DD00D469D9 /* VersionInfoViewController.xib */,
 				1A75A2D0205B702E00D469D9 /* AboutViewController.swift */,
 				1A75A2D7205BB30100D469D9 /* RandomViewController.swift */,
+				1A75A2FA205BDFE300D469D9 /* ExchangeViewController.swift */,
+				1A75A2FB205BDFE300D469D9 /* ExchangeViewController.xib */,
+				1A75A2FE205BE00400D469D9 /* DiscoverViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -372,6 +384,7 @@
 				1AEBACF7205A6C3900974188 /* ShowCell.xib in Resources */,
 				1A75A2DE205BB72800D469D9 /* RandomCell.xib in Resources */,
 				1A666D4D205A270C003348E3 /* color.txt in Resources */,
+				1A75A2FD205BDFE300D469D9 /* ExchangeViewController.xib in Resources */,
 				1A6E11612056206C0049C27C /* LaunchScreen.storyboard in Resources */,
 				1A6E115E2056206C0049C27C /* Assets.xcassets in Resources */,
 				1A75A2F1205BC3B100D469D9 /* Localizable.strings in Resources */,
@@ -405,9 +418,12 @@
 				1A75A2D6205BACBB00D469D9 /* UIView.swift in Sources */,
 				1A75A2F0205BC3B100D469D9 /* ESRefreshComponent.swift in Sources */,
 				1A75A2F7205BC3B100D469D9 /* ESPullToRefresh.swift in Sources */,
+				1A75A301205BE54100D469D9 /* WebViewProgress.swift in Sources */,
 				1A75A2F5205BC3B100D469D9 /* ESRefreshProtocol.swift in Sources */,
 				1A5BAF1E2058BA690084CC42 /* MainViewController.swift in Sources */,
+				1A75A2FF205BE00400D469D9 /* DiscoverViewController.swift in Sources */,
 				1A5BAF282058D4460084CC42 /* SizeAndColor.swift in Sources */,
+				1A75A2FC205BDFE300D469D9 /* ExchangeViewController.swift in Sources */,
 				1A75A2D8205BB30100D469D9 /* RandomViewController.swift in Sources */,
 				1A75A2D1205B702E00D469D9 /* AboutViewController.swift in Sources */,
 				1A75A2EE205BC3B100D469D9 /* ESPullToRefresh+Manager.swift in Sources */,

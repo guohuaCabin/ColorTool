@@ -46,7 +46,7 @@ class SetingViewController: UIViewController,UITableViewDelegate,UITableViewData
         
     }
     lazy var dataArray: Array = {() -> Array<Any> in
-        let datas = ["简介","版本","",""]
+        let datas = ["简介","版本","交流","发现"]
         return datas
     }()
     
@@ -90,12 +90,12 @@ class SetingViewController: UIViewController,UITableViewDelegate,UITableViewData
             self.navigationController?.pushViewController(versionInfoVC, animated: true)
             break
         case 2:
-//            let versionInfoVC = VersionInfoViewController()
-//            self.navigationController?.pushViewController(versionInfoVC, animated: true)
+            let exchangeVC = ExchangeViewController()
+            self.navigationController?.pushViewController(exchangeVC, animated: true)
             break
         case 3:
-//            let versionInfoVC = VersionInfoViewController()
-//            self.navigationController?.pushViewController(versionInfoVC, animated: true)
+            let discoverVC = DiscoverViewController()
+            self.navigationController?.pushViewController(discoverVC, animated: true)
             break
 
         default:

@@ -38,4 +38,19 @@ extension UIView{
         self.layer.cornerRadius = corner
     }
     
+    func setSW(_ width :CGFloat) {
+        var rect :CGRect = self.frame
+        
+        rect.size.width = width
+        
+        self.frame = rect
+    }
+    
+    func setSH(_ height :CGFloat) {
+        var rect :CGRect = self.frame
+        
+        rect.size.width = height
+        
+        self.frame = rect
+    }
 }
