@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ShowCell" customModule="ColorTool" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="160"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="160"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bcp-2e-LSu">
+                        <rect key="frame" x="3" y="3" width="114" height="154"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0l2-bg-MTz">
+                                <rect key="frame" x="8" y="98" width="98" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smS-wi-hGd">
+                                <rect key="frame" x="8" y="126" width="98" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="fRa-8c-dDw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="smS-wi-hGd" secondAttribute="bottom" constant="8" id="FdP-yG-JIb"/>
+                            <constraint firstAttribute="trailing" secondItem="0l2-bg-MTz" secondAttribute="trailing" constant="8" id="KJA-lg-wNn"/>
+                            <constraint firstItem="smS-wi-hGd" firstAttribute="height" secondItem="0l2-bg-MTz" secondAttribute="height" id="Ofq-VW-ucg"/>
+                            <constraint firstItem="smS-wi-hGd" firstAttribute="top" secondItem="0l2-bg-MTz" secondAttribute="bottom" constant="8" id="dmQ-hE-E1I"/>
+                            <constraint firstAttribute="trailing" secondItem="smS-wi-hGd" secondAttribute="trailing" constant="8" id="fk5-hv-PZl"/>
+                            <constraint firstItem="smS-wi-hGd" firstAttribute="leading" secondItem="bcp-2e-LSu" secondAttribute="leading" constant="8" id="iiq-vT-rBo"/>
+                            <constraint firstItem="0l2-bg-MTz" firstAttribute="leading" secondItem="bcp-2e-LSu" secondAttribute="leading" constant="8" id="riJ-tF-qme"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bcp-2e-LSu" secondAttribute="trailing" constant="3" id="NyC-pd-zEw"/>
+                <constraint firstItem="bcp-2e-LSu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="3" id="V0y-5N-aFY"/>
+                <constraint firstAttribute="bottom" secondItem="bcp-2e-LSu" secondAttribute="bottom" constant="3" id="XV6-k6-JfE"/>
+                <constraint firstItem="bcp-2e-LSu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="3" id="t4a-cg-vgv"/>
+            </constraints>
+            <size key="customSize" width="133" height="85"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="bgView" destination="bcp-2e-LSu" id="ogl-xv-iG1"/>
+                <outlet property="contentLab" destination="smS-wi-hGd" id="djG-RW-ndt"/>
+                <outlet property="titleLab" destination="0l2-bg-MTz" id="4Xe-vR-lkN"/>
+            </connections>
+            <point key="canvasLocation" x="-8" y="36"/>
+        </collectionViewCell>
+    </objects>
+</document>
